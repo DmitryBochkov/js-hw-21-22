@@ -1,0 +1,94 @@
+.wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+}
+form {
+  border: 1px solid #ccc;
+  margin: 10px;
+  border-radius: 7px;
+  padding: 15px;
+}
+form p {
+  font-size: 18px;
+  margin-top: 25px;
+}
+.button {
+  width: 250px;
+  margin: 0 auto;
+}
+button {
+  margin: 10px;
+  padding: 5px;
+  background: #f6f6f6;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+button:hover {
+  background-color: #e6e6e6;
+  border-color: #adadad;
+  cursor: pointer;
+}
+
+/*MODAL*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 150px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  border-radius: 5px;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+.close {
+  color: #ccc;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 3px;
+  top: -6px;
+  padding: 2px;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#modalMessage {
+  padding: 15px;
+}
+#testResetButon {
+  display: none;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
